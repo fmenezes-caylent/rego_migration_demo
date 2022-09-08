@@ -32,8 +32,9 @@ Resources:
     UpdateReplacePolicy: Retain
     DeletionPolicy: Retain
     Metadata:
+      aws:cdk:path: storage-stack/S3Bucket/Resource
 ```
-Note: Even though we are synthesizing Cloudformation templates, it's important to have in mind that the stack management will be done by CDK. CDK acts like a wrapper for Cloudformation. CDK Synthesize is only used for verification. All deployments are supposed to be done through `cdk deploy`
+Note: Even though we are synthesizing Cloudformation templates, it's important to have in mind that the stack management will be done by CDK, acting as a wrapper for Cloudformation. CDK Synthesize is only used for verification. All deployments are supposed to be done through `cdk deploy`
 
 The rest of the template is comprised of parameters and metadata added by CDK for analytics purposes, and do not interefere with your stack. Let's check differences to our current environment.
 
