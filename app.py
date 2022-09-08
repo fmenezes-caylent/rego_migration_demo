@@ -8,7 +8,7 @@ from hello_cdk.storage_stack import StorageStack
 
 app = cdk.App()
 
-StorageStack(app, "storage-stack", policy_flag=True)
+StorageStack(app, "storage-stack", policy_flag=False)
 # ComputeStack(app, "compute-stack")
 
 app.synth()
